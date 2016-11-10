@@ -3,6 +3,7 @@ This a plugin for content to show as a takeover, or popup if you will. You simpl
 
 ## The markup
 ### HTML
+```HTML
 <div id="takeitover">
   <div class="element">
     // this the element you click to open your takeover
@@ -12,3 +13,4 @@ This a plugin for content to show as a takeover, or popup if you will. You simpl
     // Inside here you can put your own markup and all of it will be shown in a takeover
   </div>
 </div>
+```
