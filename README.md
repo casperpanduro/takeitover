@@ -17,6 +17,11 @@ Inlcude the takeitover.min.js in your project.
 </div>
 ```
 ### JQUERY
+Add this just before the body end tag.
 ```Javascript
-  $("#takeitover").takeitover();
+<script>
+  $(document).ready(function(){
+    $("#takeitover").takeitover();
+  });
+</script>
 ```
