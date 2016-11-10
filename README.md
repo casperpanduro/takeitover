@@ -27,3 +27,5 @@ Add this just before the body end tag.
 ```
 
 ## Options
+#### Speed
+Adjust the speed of the animation
