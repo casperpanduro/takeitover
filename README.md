@@ -1,7 +1,7 @@
 # takeitover.js
 This a plugin for content to show as a takeover, or popup if you will. You simply just add a single file for your project and follow the guide, and you will be able to show content in a popup. It simply and works very well.
 
-## The markup
+## How to add it
 ### HTML
 Inlcude the takeitover.min.js in your project.
 
@@ -25,3 +25,5 @@ Add this just before the body end tag.
   });
 </script>
 ```
+
+## Options
