@@ -3,6 +3,8 @@ This a plugin for content to show as a takeover, or popup if you will. You simpl
 
 ## The markup
 ### HTML
+Inlcude the takeitover.min.js in your project.
+
 ```HTML
 <div id="takeitover">
   <div class="element">
