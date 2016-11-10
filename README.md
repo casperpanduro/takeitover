@@ -30,3 +30,19 @@ Add this just before the body end tag.
 #### speed
 Adjust the speed of the animation
 (Default: 500)
+
+#### easing
+Control the easing of the animation. Use the JQUERY UI easings in here. 
+(Default: false)
+OBS: You need to include JQUERY UI for this to work.
+
+
+
+speed: 500,
+easing: false,
+elementSelector: '.element',
+contentSelector: '.content',
+background: 'rgba(255,255,255,0.95)',
+clickOnOverlay: true,
+closeButton: true,
+buttonColor: "black"
