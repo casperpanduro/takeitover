@@ -16,7 +16,7 @@ Inlcude the takeitover.min.js in your project.
   </div>
 </div>
 ```
-
+### JQUERY
 ```Javascript
   $("#takeitover").takeitover();
 ```
