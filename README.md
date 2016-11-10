@@ -6,11 +6,11 @@ This a plugin for content to show as a takeover, or popup if you will. You simpl
 ```HTML
 <div id="takeitover">
   <div class="element">
-    // this the element you click to open your takeover
+    <!-- this the element you click to open your takeover -->
   </div>
   <div class="content">
-    // This is the content that will be shown in a takeover
-    // Inside here you can put your own markup and all of it will be shown in a takeover
+    <!-- This is the content that will be shown in a takeover -->
+    <!-- Inside here you can put your own markup and all of it will be shown in a takeover -->
   </div>
 </div>
 ```
