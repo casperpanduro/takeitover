@@ -27,5 +27,6 @@ Add this just before the body end tag.
 ```
 
 ## Options
-#### Speed
+#### speed
 Adjust the speed of the animation
+(Default: 500)
