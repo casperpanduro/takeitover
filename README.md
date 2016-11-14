@@ -53,6 +53,9 @@ Set to false if you dont want to show any closeButton
 #### buttonColor (Default: "black")
 Control the color of the close button
 
+#### complete (Default: null)
+The complete function for when animation has ended
+
 ### How to write the options
 ```Javascript
 <script>
@@ -65,7 +68,8 @@ Control the color of the close button
       background: 'rgba(255,255,255,0.95)',
       clickOnOverlay: true,
       closeButton: true,
-      buttonColor: "black"
+      buttonColor: "black",
+      complete: null
     });
   });
 </script>
