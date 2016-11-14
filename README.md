@@ -7,10 +7,10 @@ Inlcude the takeitover.min.js in your project.
 
 ```HTML
 <div id="takeitover">
-  <div class="element">
+  <div class="takeitover-trigger">
     <!-- this the element you click to open your takeover -->
   </div>
-  <div class="content">
+  <div class="takeitover-content">
     <!-- This is the content that will be shown in a takeover -->
     <!-- Inside here you can put your own markup and all of it will be shown in a takeover -->
   </div>
@@ -35,10 +35,10 @@ Adjust the speed of the animation
 Control the easing of the animation. Use the JQUERY UI easings in here. 
 <br>OBS: You need to include JQUERY UI for this to work.
 
-#### elementSelector (Default: '.element')
+#### elementSelector (Default: '.takeitover-trigger')
 This is the element you that triggers the takeover
 
-#### contentSelector (Default: '.content')
+#### contentSelector (Default: '.takeitover-content')
 This is the content selector that displays in the takeover
 
 #### background (Default: 'rgba(255,255,255,0.95)')
@@ -60,8 +60,8 @@ Control the color of the close button
     $("#takeitover").takeitover({
       speed: 500,
       easing: false,
-      elementSelector: '.element',
-      contentSelector: '.content',
+      elementSelector: '.takeitover-trigger',
+      contentSelector: '.takeitover-content',
       background: 'rgba(255,255,255,0.95)',
       clickOnOverlay: true,
       closeButton: true,
