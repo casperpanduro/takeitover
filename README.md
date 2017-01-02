@@ -25,6 +25,18 @@ Add this just before the body end tag.
   });
 </script>
 ```
+## Target specific element
+
+```HTML
+<div id="takeitover">
+  <div class="takeitover-trigger" data-target="#target">
+    <!-- add 'data-target' attribute to target a element -->
+  </div>
+</div>
+<div class="takeitover-content" id="target">
+  <!-- By doing this you can place this element anyplace you want in the document -->
+</div>
+```
 
 ## Options
 #### speed (Default: 500)
