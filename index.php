@@ -144,8 +144,8 @@
 	<script>
 		$(document).ready(function(){
 			$("#takeitover").takeitover({
-				complete: function(){
-					console.log("DONW");
+				callback: function(){
+					console.log("Takeitover complete!");
 				}
 			});
 		});

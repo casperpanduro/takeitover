@@ -18,7 +18,7 @@
             clickOnOverlay: true,
             closeButton: true,
             buttonColor: "black",
-            complete: null
+            callback: null
         }, options );
         
 
@@ -112,7 +112,6 @@
 
         // easing
         var id = settings.contentSelector;
-        console.log("hl: "+settings.contentSelector);
 
         // activating takeitover
         $(document).on("click", settings.elementSelector, function(){
@@ -125,7 +124,6 @@
             else {
                 target = $(target);
             }
-            console.log(target);
             $("body").css({
                 "overflow-y": "hidden",
                 "height": "100%"
@@ -145,8 +143,8 @@
                     "top":"0px",
                     "opacity":1
                 }, settings.speed/2, easing, function(){
-                    if ( $.isFunction( settings.complete ) ) {
-                        settings.complete.call( this );
+                    if ( $.isFunction( settings.callback ) ) {
+                        settings.callback.call( this );
                     }
                 });
                 
