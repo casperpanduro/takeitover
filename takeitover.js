@@ -114,7 +114,7 @@
         var id = settings.contentSelector;
 
         // activating takeitover
-        $(document).on("click", settings.elementSelector, function(){
+        $(document).on("click", settings.elementSelector, function(e){
             var $element = $(this);
             var target = $element.attr("data-target");
             if(target == null) {
@@ -149,6 +149,7 @@
                 });
                 
             }, settings.speed/2);
+            e.preventDefault();
         });
 
         // close options
