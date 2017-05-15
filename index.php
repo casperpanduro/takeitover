@@ -139,9 +139,10 @@
 			</div>
 		</div>
 	</section>
-	
 	<script src="takeitover.js"></script>
+	
 	<script>
+
 		$(document).ready(function(){
 			$(".takeitover-trigger, .test-trigger").takeitover({
 				before: function() {

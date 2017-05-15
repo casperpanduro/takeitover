@@ -17,6 +17,10 @@ Inlcude the takeitover.min.js in your project.
 ### JQUERY
 Add this just before the body end tag.
 ```Javascript
+<!-- JQUERY LIBARY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- TAKEITOVER -->
+<script src="YOURLOCATION/takeitover.min.js"></script> 
 <script>
   $(document).ready(function(){
     // select the element you want to have as trigger for the takeitover content
