@@ -7,23 +7,24 @@
             "overflow-y": "hidden",
             "height": "100%"
         });
+        var takeitoverElement = this;
         // This is the easiest way to have default options.
         var settings = $.extend({
             // These are the defaults.
             speed: 500,
             easing: false,
-            elementSelector: '.takeitover-trigger',
             contentSelector: '.takeitover-content',
             background: 'rgba(255,255,255,0.95)',
             clickOnOverlay: true,
             closeButton: true,
             buttonColor: "black",
+            before: null,
             callback: null
         }, options );
         
 
         // css to elements
-        $(settings.elementSelector).css({
+        $(takeitoverElement).css({
             "cursor":"pointer"
         });
 
@@ -114,8 +115,12 @@
         var id = settings.contentSelector;
 
         // activating takeitover
-        $(document).on("click", settings.elementSelector, function(e){
+        $(this).on("click", function(e){
+            if ( $.isFunction( settings.before ) ) {
+                settings.before.call( this );
+            }
             var $element = $(this);
+            
             var target = $element.attr("data-target");
             if(target == null) {
                 target = settings.contentSelector;
@@ -202,10 +207,11 @@
                 closeTakeitover();
             });
         }
-        // closing document by clicking on overlay
         
         return this;
     };
+
+
  
 }( jQuery ));
 

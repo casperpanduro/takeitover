@@ -16,7 +16,7 @@
 	<section>
 		<div class="container">
 			<div id="takeitover">
-				<div class="takeitover-trigger" data-target="#second">
+				<div class="test-trigger" data-target="#second">
 					<p>TEST</p>
 				</div>
 				<div class="takeitover-content">
@@ -143,7 +143,10 @@
 	<script src="takeitover.js"></script>
 	<script>
 		$(document).ready(function(){
-			$("#takeitover").takeitover({
+			$(".takeitover-trigger, .test-trigger").takeitover({
+				before: function() {
+					console.log("animation started");
+				},
 				callback: function(){
 					console.log("Takeitover complete!");
 				}
