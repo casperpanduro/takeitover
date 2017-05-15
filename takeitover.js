@@ -19,7 +19,8 @@
             closeButton: true,
             buttonColor: "black",
             before: null,
-            callback: null
+            callback: null,
+            closeFunction: null
         }, options );
         
 
@@ -155,6 +156,9 @@
         var closeSelector;
 
         function closeTakeitover() {
+            if ( $.isFunction( settings.callback ) ) {
+                settings.closeFunction.call( this );
+            }
             var $element = $(settings.contentSelector);
             $element.animate({
                 "top":"100px",
