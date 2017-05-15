@@ -57,8 +57,27 @@ Set to false if you dont want to show any closeButton
 #### buttonColor (Default: "black")
 Control the color of the close button
 
-#### complete (Default: null)
-The complete function for when animation has ended
+#### before (Default: null)
+The before function for when animation has started
+
+#### callback (Default: null)
+The callback function for when animation has 
+
+##### Example: 
+```Javascript
+<script>
+  $(document).ready(function(){
+    $(".takeitover-trigger").takeitover({
+      callback: function(){
+        // do something
+      },
+    });
+  });
+</script>
+```
+
+#### closeFunction (Default: null)
+Call a function when takeitover closes
 
 ### How to write the options
 ```Javascript
@@ -73,7 +92,9 @@ The complete function for when animation has ended
       clickOnOverlay: true,
       closeButton: true,
       buttonColor: "black",
-      complete: null
+      before: null,
+      callback: null,
+      closeFunction: null
     });
   });
 </script>
