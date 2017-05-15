@@ -149,6 +149,9 @@
 				},
 				speed: 1000,
 				easing: 'easeOutExpo',
+				closeFunction: function(){
+					console.log("close");
+				},
 				callback: function(){
 					console.log("Takeitover complete!");
 				}

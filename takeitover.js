@@ -115,6 +115,7 @@
                 settings.before.call( this );
             }
             var $element = $(this);
+            $element.addClass("active");
             
             var target = $element.attr("data-target");
             if(target == null) {
@@ -123,7 +124,12 @@
             }
             else {
                 target = $(target);
+
             }
+
+            target.addClass("active");
+            
+
             $("body").css({
                 "overflow-y": "hidden",
                 "height": "100%"
@@ -156,10 +162,12 @@
         var closeSelector;
 
         function closeTakeitover() {
-            if ( $.isFunction( settings.callback ) ) {
+            if ( $.isFunction( settings.closeFunction ) ) {
                 settings.closeFunction.call( this );
             }
             var $element = $(settings.contentSelector);
+            $element.removeClass("active");
+            takeitoverElement.removeClass("active");
             $element.animate({
                 "top":"100px",
                 "opacity":0
