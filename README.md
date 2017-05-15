@@ -6,13 +6,13 @@ This a plugin for content to show as a takeover, or popup if you will. You simpl
 Inlcude the takeitover.min.js in your project.
 
 ```HTML
-  <div class="takeitover-trigger">
-    <!-- this the element you click to open your takeover -->
-  </div>
-  <div class="takeitover-content">
-    <!-- This is the content that will be shown in a takeover -->
-    <!-- Inside here you can put your own markup and all of it will be shown in a takeover -->
-  </div>
+<div class="takeitover-trigger">
+  <!-- this the element you click to open your takeover -->
+</div>
+<div class="takeitover-content">
+  <!-- This is the content that will be shown in a takeover -->
+  <!-- Inside here you can put your own markup and all of it will be shown in a takeover -->
+</div>
 ```
 ### JQUERY
 Add this just before the body end tag.
