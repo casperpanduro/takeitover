@@ -86,15 +86,20 @@ Call a function when takeitover closes
     $(".takeitover-trigger").takeitover({
       speed: 500,
       easing: false,
-      elementSelector: '.takeitover-trigger',
       contentSelector: '.takeitover-content',
       background: 'rgba(255,255,255,0.95)',
       clickOnOverlay: true,
-      closeButton: true,
-      buttonColor: "black",
-      before: null,
-      callback: null,
-      closeFunction: null
+      closeButton: true, // false if you dont want to display the close button
+      buttonColor: "black", // write any color you want
+      before: function(){
+        // do something
+      },
+      callback: function(){
+        // do something
+      },
+      closeFunction: function(){
+        // do something
+      }
     });
   });
 </script>
