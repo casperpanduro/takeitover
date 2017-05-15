@@ -40,7 +40,7 @@ Add this just before the body end tag.
 Adjust the speed of the animation
 
 #### easing (Default: false)
-Include a css easing here for easing options.
+Jquery UI easings. Needs to have jquery UI installed for this to work.
 
 #### contentSelector (Default: '.takeitover-content')
 This is the content selector that displays in the takeover

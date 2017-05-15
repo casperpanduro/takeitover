@@ -147,6 +147,8 @@
 				before: function() {
 					console.log("animation started");
 				},
+				speed: 1000,
+				easing: 'easeOutExpo',
 				callback: function(){
 					console.log("Takeitover complete!");
 				}

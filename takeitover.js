@@ -101,14 +101,8 @@
         if(settings.easing == false) {
             easing = "";
         }
-        else {
-            if (jQuery.ui) {
-              easing = settings.easing;
-            }
-            else {
-                easing = "";
-                console.log("takeitover.js: JQUERY UI needed for easing options");
-            }
+        else {  
+          easing = settings.easing;
         }
 
         // easing
