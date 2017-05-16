@@ -1,7 +1,5 @@
-# takeitover.js
+# takeitover.js - [Download here](https://raw.githubusercontent.com/casperpanduro/takeitover/master/src/takeitover.min.js)
 This a plugin for content to show as a takeover, or popup if you will. You simply just add a single file for your project and follow the guide, and you will be able to show content in a popup. It simply and works very well.
-
-## [Download takeitover here](https://raw.githubusercontent.com/casperpanduro/takeitover/master/src/takeitover.min.js)
 
 ## How to add it
 ### JQUERY
