@@ -98,7 +98,7 @@ Call a function when takeitover closes
       before: function(trigger, target){ // you can now do something with the triggerselector ('trigger') or the target selector ('target')
         // do something
       },
-      callback: function(){ // you can now do something with the triggerselector ('trigger') or the target selector ('target')
+      callback: function(trigger, target){ // you can now do something with the triggerselector ('trigger') or the target selector ('target')
         // do something
       },
       closeFunction: function(){
