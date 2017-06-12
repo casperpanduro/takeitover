@@ -95,10 +95,10 @@ Call a function when takeitover closes
       clickOnOverlay: true,
       closeButton: true, // false if you dont want to display the close button
       buttonColor: "black", // write any color you want
-      before: function(){
+      before: function(trigger, target){ // you can now do something with the triggerselector ('trigger') or the target selector ('target')
         // do something
       },
-      callback: function(){
+      callback: function(){ // you can now do something with the triggerselector ('trigger') or the target selector ('target')
         // do something
       },
       closeFunction: function(){
