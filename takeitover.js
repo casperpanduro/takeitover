@@ -114,10 +114,7 @@
         // activating takeitover
         if(takeitoverActive == false) {
             $(this).on("click", function(e){
-                takeitoverActive = true;
-                if ( $.isFunction( settings.before ) ) {
-                    settings.before.call( this );
-                }
+                
                 var $element = $(this);
                 $element.addClass("active");
                 
@@ -132,6 +129,13 @@
                 }
 
                 target.addClass("active");
+
+                var trigger = this;
+
+                takeitoverActive = true;
+                if ( $.isFunction( settings.before ) ) {
+                    settings.before.call( this, trigger, target );
+                }
                 
 
                 $("body").css({
@@ -154,7 +158,7 @@
                         "opacity":1
                     }, settings.speed/2, easing, function(){
                         if ( $.isFunction( settings.callback ) ) {
-                            settings.callback.call( this );
+                            settings.callback.call( this, trigger, target );
                         }
                     });
                     
