@@ -113,8 +113,7 @@
 
         // activating takeitover
         if(takeitoverActive == false) {
-            $(this).on("click", function(e){
-                
+            $(document).on("click", this, function(e){
                 var $element = $(this);
                 $element.addClass("active");
                 
