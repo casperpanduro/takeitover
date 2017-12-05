@@ -113,7 +113,8 @@
 
         // activating takeitover
         if(takeitoverActive == false) {
-            $(document).on("click", this, function(e){        
+            $(document).on("click", this.selector, function(e){
+                
                 var $element = $(this);
                 $element.addClass("active");
                 
@@ -129,11 +130,11 @@
 
                 target.addClass("active");
 
-                var trigger = $element;
+                var trigger = this;
 
                 takeitoverActive = true;
                 if ( $.isFunction( settings.before ) ) {
-                    settings.before.call( $element, trigger, target );
+                    settings.before.call( this, trigger, target );
                 }
                 
 
