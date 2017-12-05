@@ -133,7 +133,7 @@
 
                 takeitoverActive = true;
                 if ( $.isFunction( settings.before ) ) {
-                    settings.before.call( this, trigger, target );
+                    settings.before.call( $element, trigger, target );
                 }
                 
 
